@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Enter File name :"
+read FileName
+
+echo -e "#!/usr/bin/python3">>${FileName}
+
+chmod +x ${FileName}
