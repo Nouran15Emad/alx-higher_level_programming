@@ -3,4 +3,6 @@
 echo "Enter File name :"
 read FileName
 
+echo -e "--write a comment here">>${FileName}
+
 chmod +x ${FileName}
