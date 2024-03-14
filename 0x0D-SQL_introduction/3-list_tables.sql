@@ -1,3 +1,4 @@
 -- List all tables in a dataBase
-USE mysql;
-SHOW tables;
+SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = '$1';
