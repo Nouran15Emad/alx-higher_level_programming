@@ -6,11 +6,10 @@ number = random.randint(-10000, 10000)
 
 
 # get the last digit
-Last_digit = abs(number % 10)
-
-# Negate the last digit for negative number
 if number < 0:
-    Last_digit = -Last_digit
+    Last_digit = number % -10  # Get negative last digit for negative numbers
+else:
+    Last_digit = number % 10   # Get last digit for positive numbers
 
 # Print the result based on the value of Last_digit
 if Last_digit > 5:
