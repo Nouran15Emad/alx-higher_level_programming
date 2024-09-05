@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-print("{}".format(''.join(chr(i) for i in range(ord('a'), ord('z') + 1))),
-      end="")
+alphabet = ''.join(chr(i) for i in range(ord('a'), ord('z') + 1))
+print("{}".format(alphabet), end="")
+
 
 
 # ord is a function that convert the character to its Ascii code
