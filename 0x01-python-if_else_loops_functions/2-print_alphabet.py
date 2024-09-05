@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 
-for char in "abcdefghijklmnopqrstuvwxyz":
-    print("{}".format(char), end="")
+print("{}".format(''.join(chr(i) for i in range(ord('a'), ord('z') + 1))),
+      end="")
+
 
 # ord is a function that convert the character to its Ascii code
 # ex: ord('a') = > 97
